@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 450px;
+    max-height: 379px;
+    margin: 0;
+    background-color: #0b2434;
+    padding: 20px;
+    font-family: "Karla", sans-serif;
+}
+
+main {
+    background-color: #f5f5f5;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+nav.die-display .toggler-slider {
+    justify-content: flex-start;
+}
+
+nav.num-display .toggler--slider {
+    justify-content: flex-end;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggler--navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2b283a;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin: 0;
+    color: #2b283a;
+}
+
+.instructions {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 7px 43.52px;
+    letter-spacing: -0.01em;
+    color: #4a4e74;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.die-face {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.die-num {
+    font-size: 2rem;
+}
+
+.roll-dice-button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035ff;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.roll-dice-button:focus {
+    outline: none;
+}
+
+.roll-dice-button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.win-message {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
